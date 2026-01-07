@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import heroImg from "../assets/photoSelf.jpeg";
 import { ShieldCheck, Cpu, Layout, Sparkles, MoveDown, Terminal as TerminalIcon } from 'lucide-react';
 import gsap from 'gsap';
 
@@ -81,7 +82,8 @@ const Hero: React.FC<HeroProps> = ({ onOpenTerminal }) => {
                 <div className="relative w-full h-full glass rounded-[32px] overflow-hidden border border-white/10 p-2">
                   <div className="w-full h-full rounded-[24px] overflow-hidden bg-slate-900 group">
                     <img 
-                      src="./images/photoSelf.jpeg?q=70&w=400&auto=format&fit=crop" 
+                      src={heroImg}
+                      // src="${heroImg}?q=70&w=400&auto=format&fit=crop" 
                       alt="Prathmesh Kamble"
                       className="w-full h-full object-cover  transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
                       decoding="async"
